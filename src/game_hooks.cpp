@@ -494,6 +494,7 @@ bool hookSlSetTag(const sl1::Resource *resource, sl::BufferType tag, uint32_t id
         case 23: {
             // I AM NOT SURE WHAT TO DO WITH THIS!!!
             // This is really old behaviour of asking for a hint!
+            // !!!This buffer is fucked - since UI IS A FULL SCREEN THING ALPHA EVERYWHERE IN-GAME IS 1.0!!!
             #if 0
             rt.type = sl::kBufferTypeUIColorAndAlpha;
             if (SL_FAILED(ret, bmi::sl2::SetTagForFrame(*frame_token, viewport, &rt, 1, nullptr)))
